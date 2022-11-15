@@ -12,5 +12,12 @@ namespace StoreWeb.Controllers
         {
             return "Car List";
         }
+
+        public IActionResult CollectList(string brand, string year)
+        {
+            ViewData["brand"] = brand;
+            ViewData["year"] = year;
+            return View();
+        }
     }
 }
