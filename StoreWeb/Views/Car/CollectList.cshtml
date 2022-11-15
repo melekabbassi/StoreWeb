@@ -7,8 +7,5 @@
 
 <h2>Collect List</h2>
 <ul>
-	@for (int i = (int)ViewData["year"]; i < DateTime.Now.Year - 10; i++)
-	{
-		<li><b>@ViewData["brand"]</b>: year@i</li>
-	}
+	<li><b>@ViewData["brand"]</b>: year @ViewData["year"]</li>
 </ul>
